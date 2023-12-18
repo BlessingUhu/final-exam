@@ -1,16 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+"use strict"
 
-function App() {
-  const [count, setCount] = useState(0)
+import React from "react";
+import RecordsList from "./components/Recordlist";
+import AddRecord from "./components/AddRecord";
 
+const App = () => {
   return (
-    <>
+    <div>
+      <RecordsList />
+      <AddRecord />
+    </div>
+  );
+};
 
-    </>
-  )
-}
-
-export default App
+export default App;
