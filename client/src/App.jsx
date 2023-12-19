@@ -4,7 +4,7 @@ import React from "react";
 import RecordsList from "./components/Recordlist";
 import AddRecord from "./components/AddRecord";
 import UpdateRecord from "./components/UpdateRecord";
-// import DeleteRecord from "./components/DeleteRecord";
+import DeleteRecord from "./components/DeleteRecord";
 
 const App = () => {
   const [selectedRecordId, setSelectedRecordId] = React.useState(null);
@@ -18,6 +18,7 @@ const App = () => {
       <RecordsList onRecordClick={handleRecordClick} />
       <AddRecord />
       <UpdateRecord recordId={selectedRecordId} />
+      <DeleteRecord recordId={selectedRecordId} />
     </div>
   );
 };
