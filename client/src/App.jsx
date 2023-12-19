@@ -17,8 +17,12 @@ const App = () => {
     <div>
       <RecordsList onRecordClick={handleRecordClick} />
       <AddRecord />
-      <UpdateRecord recordId={selectedRecordId} />
-      <DeleteRecord recordId={selectedRecordId} />
+      {selectedRecordId && (
+        <>
+          <UpdateRecord recordId={selectedRecordId} />
+          <DeleteRecord recordId={selectedRecordId} />
+        </>
+      )}
     </div>
   );
 };

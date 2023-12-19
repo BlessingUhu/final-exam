@@ -15,11 +15,11 @@ const RecordsList = ({onRecordClick}) => {
     <div>
       <h2>Records List</h2>
       <ul>
-        {/* {records.map((record) => (
+        {records.map((record) => (
           <li key={record._id} onClick={() => onRecordClick(record._id)}>
             {record.name}, {record.position}, {record.level}
           </li>
-        ))} */}
+        ))}
       </ul>
     </div>
   );
