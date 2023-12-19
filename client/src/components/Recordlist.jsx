@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
 
-const RecordsList = () => {
+const RecordsList = ({onRecordClick}) => {
   const [records, setRecords] = useState([]);
 
   useEffect(() => {
@@ -16,7 +16,7 @@ const RecordsList = () => {
       <h2>Records List</h2>
       <ul>
         {/* {records.map((record) => (
-          <li key={record._id}>
+          <li key={record._id} onClick={() => onRecordClick(record._id)}>
             {record.name}, {record.position}, {record.level}
           </li>
         ))} */}
