@@ -12,7 +12,7 @@ const DeleteRecord = ({recordId}) => {
   return (
     <div>
       <h2>Delete Record</h2>
-      <button onClick={handleDeleteRecord}>Delete Record</button>
+      <button className="deletebutton" onClick={handleDeleteRecord}>Delete Record</button>
     </div>
   );
 };
